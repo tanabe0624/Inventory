@@ -24,7 +24,7 @@ import kotlinx.coroutines.flow.Flow
 interface ItemsRepository {
 
     //Retrieve all the items from the the given data source.
-    fun getALlItemsStream(): Flow<List<Item>>
+    fun getAllItemsStream(): Flow<List<Item>>
 
     //Retrieve an item from the given data source that matches with the [id].
     fun getItemStream(id: Int): Flow<Item?>
